@@ -6,6 +6,7 @@ import { AgenteReservas } from './entities/agente-reservas.entity';
 import { Cliente } from './entities/cliente.entity';
 import { Reserva } from './entities/reserva.entity';
 import { ReservaContenedor } from './entities/reserva-contenedor.entity';
+import { ClienteTypeormRepository } from './infraestructura/cliente-typeorm.repository';
 
 // Entidades compartidas necesarias
 import { Buque } from '../shared/entities/buque.entity';
@@ -64,6 +65,7 @@ import { EstadosReservaService } from './services/estados-reserva.service';
   ],
   providers: [
     ClientesService,
+    ClienteTypeormRepository,
     ReservasService,
     AgentesService,
     TarifasService,
