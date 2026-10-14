@@ -70,6 +70,8 @@ import { EntregasService } from './services/entregas.service';
 import { ImportadoresService } from './services/importadores.service';
 import { DocumentacionService } from './services/documentacion.service';
 import { VictoriaMetricsService } from './services/victoriametrics.service';
+// Rodaja vertical Lab06: adaptador de infraestructura del puerto Incidencias
+import { IncidenciasTypeormAdapter } from './infraestructura/incidencias-typeorm.adapter';
 
 @Module({
   imports: [
@@ -138,6 +140,7 @@ import { VictoriaMetricsService } from './services/victoriametrics.service';
     SensoresService,
     GpsService,
     IncidenciasService,
+    IncidenciasTypeormAdapter,
     ReportesService,
     EntregasService,
     ImportadoresService,

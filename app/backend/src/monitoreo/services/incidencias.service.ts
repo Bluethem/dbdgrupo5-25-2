@@ -108,6 +108,11 @@ export class IncidenciasService {
     }
   }
 
+  /**
+   * Rodaja vertical Lab06: el POST de incidencias usa RegistrarIncidenciaUseCase
+   * + IncidenciasTypeormAdapter. Este create queda como legado / respaldo;
+   * listar, update y delete siguen aquí.
+   */
   async create(data: CreateIncidenciaDto) {
     try {
       // Validar que venga un id_usuario (desde el contexto de autenticación)
