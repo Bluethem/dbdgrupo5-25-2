@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Header } from "@/components/Header";
 import {
   operacionesIncidenciasAPI,
   type OperacionConIncidencias,
@@ -165,8 +164,7 @@ export default function GestionIncidenciasOperacionesPage() {
 
   return (
     <div className="flex min-h-screen flex-col bg-[#f5f5f5] text-gray-900">
-      <Header />
-      <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col gap-8 px-4 py-6 md:px-8 md:py-10">
+<main className="mx-auto flex w-full max-w-6xl flex-1 flex-col gap-8 px-4 py-6 md:px-8 md:py-10">
         <section>
           <h1 className="text-3xl font-bold text-[#003d5c] md:text-4xl">
             Operaciones con Incidencias

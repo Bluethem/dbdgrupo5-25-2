@@ -81,7 +81,7 @@ export function MapHeader() {
         {/* Logo y Título Dinámico - FIJOS */}
         <div className="flex flex-shrink-0 items-center gap-4">
           <Link
-            href="/monitoreo"
+            href="/"
             className="flex items-center gap-2 text-xl font-bold text-[#002b5c] dark:text-zinc-100 transition-colors hover:text-[#ff8c00]"
           >
             <Image
@@ -93,9 +93,9 @@ export function MapHeader() {
             />
             <span className="whitespace-nowrap">Hapag-Lloyd</span>
           </Link>
-          
+
           <div className="h-8 w-px bg-zinc-300 dark:bg-zinc-700"></div>
-          
+
           <div className="flex items-center gap-2">
             <span className="material-symbols-outlined text-2xl text-primary">{pageInfo.icon}</span>
             <div>
@@ -107,7 +107,7 @@ export function MapHeader() {
 
         {/* Navegación Rápida con Scroll Horizontal - SCROLLEABLE */}
         <nav className="hidden min-w-0 flex-1 lg:block">
-          <div 
+          <div
             ref={navScrollRef}
             onScroll={handleNavScroll}
             className="flex gap-2 overflow-x-auto pb-2 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-zinc-300 hover:scrollbar-thumb-zinc-400"
@@ -189,11 +189,11 @@ export function MapHeader() {
             {showUserMenu && (
               <>
                 {/* Overlay invisible para cerrar el menú */}
-                <div 
+                <div
                   className="fixed inset-0 z-10"
                   onClick={() => setShowUserMenu(false)}
                 />
-                
+
                 {/* Menú dropdown */}
                 <div className="absolute right-0 top-full z-20 mt-2 w-56 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 py-2 shadow-xl">
                   <div className="px-4 py-3 border-b border-zinc-200 dark:border-zinc-700">
@@ -204,7 +204,7 @@ export function MapHeader() {
                       {usuario?.correo_electronico}
                     </p>
                   </div>
-                  
+
                   <Link
                     href="/perfil"
                     className="flex items-center gap-3 px-4 py-2 text-sm text-zinc-700 dark:text-zinc-300 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800"
@@ -213,7 +213,7 @@ export function MapHeader() {
                     <span className="material-symbols-outlined text-lg">person</span>
                     Mi Perfil
                   </Link>
-                  
+
                   <Link
                     href="/configuracion"
                     className="flex items-center gap-3 px-4 py-2 text-sm text-zinc-700 dark:text-zinc-300 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800"
@@ -222,9 +222,9 @@ export function MapHeader() {
                     <span className="material-symbols-outlined text-lg">settings</span>
                     Configuración
                   </Link>
-                  
+
                   <hr className="my-2 border-zinc-200 dark:border-zinc-700" />
-                  
+
                   <button
                     className="flex w-full items-center gap-3 px-4 py-2 text-sm text-red-600 transition-colors hover:bg-red-50"
                     onClick={() => {
@@ -248,16 +248,16 @@ export function MapHeader() {
         nav > div::-webkit-scrollbar {
           height: 6px;
         }
-        
+
         nav > div::-webkit-scrollbar-track {
           background: transparent;
         }
-        
+
         nav > div::-webkit-scrollbar-thumb {
           background-color: #d4d4d8;
           border-radius: 3px;
         }
-        
+
         nav > div::-webkit-scrollbar-thumb:hover {
           background-color: #a1a1aa;
         }

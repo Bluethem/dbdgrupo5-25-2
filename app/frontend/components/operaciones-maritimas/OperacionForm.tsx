@@ -1,6 +1,5 @@
 "use client";
 
-import { Header } from "@/components/Header";
 import Image from "next/image";
 import Link from "next/link";
 import { ContenedoresInfo } from "@/components/operaciones-maritimas/ContenedoresInfo";
@@ -260,10 +259,9 @@ export default function OperacionForm({ buque, searchParams }: OperacionFormProp
 
     const handleIniciarOperacion = () => setShowConfirmModal(true);
 
+    // El header del módulo lo aporta operaciones-maritimas/layout.tsx (ModuleHeader)
     return (
         <div className="flex min-h-screen flex-col bg-[#f5f7f8] text-gray-900 dark:bg-[#0f1923] dark:text-gray-100">
-            <Header />
-
             {/* ── Toasts ── */}
             <div className="fixed top-5 right-5 z-[9999] flex flex-col gap-3 w-80">
                 {toasts.map((toast) => {

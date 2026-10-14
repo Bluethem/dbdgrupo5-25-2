@@ -1,6 +1,5 @@
 "use client";
 
-import { Header } from "@/components/Header";
 import Link from "next/link";
 import { Suspense, useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -102,8 +101,7 @@ function SeleccionarEmbarcacionContent() {
 
   return (
     <div className="flex flex-col min-h-screen bg-[#f5f7f8] dark:bg-[#0f1923] font-display">
-      <Header />
-      <main className="flex-grow flex p-6 gap-6">
+<main className="flex-grow flex p-6 gap-6">
         <div className="w-full flex flex-col gap-6">
           <div className="flex justify-between items-center">
             <div>

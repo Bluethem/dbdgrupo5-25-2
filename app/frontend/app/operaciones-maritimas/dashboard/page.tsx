@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Header } from "@/components/Header";
 import { conciliacionAPI, type DashboardMetricas, type OperacionMaritima } from "@/lib/api/conciliacion";
 import { ModalDetalleOperacion } from "@/components/operaciones-maritimas/ModalDetalleOperacion";
 import { ModalCambiarEstado } from "@/components/operaciones-maritimas/ModalCambiarEstado";
@@ -100,8 +99,7 @@ export default function DashboardOperacionesMaritimas() {
   if (loading) {
     return (
       <div className="flex min-h-screen flex-col bg-[#f5f7fa] text-gray-900">
-        <Header />
-        <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col items-center justify-center px-4 py-8">
+<main className="mx-auto flex w-full max-w-6xl flex-1 flex-col items-center justify-center px-4 py-8">
           <div className="h-12 w-12 animate-spin rounded-full border-4 border-[#e54c2a] border-t-transparent" />
           <p className="mt-4 text-gray-600">Cargando datos...</p>
         </main>
@@ -126,9 +124,7 @@ export default function DashboardOperacionesMaritimas() {
 
   return (
     <div className="flex min-h-screen flex-col bg-[#f5f7fa] text-gray-900">
-      <Header />
-
-      <main className="mx-auto flex w-full max-w-7xl flex-1 flex-col px-4 py-8 md:px-8">
+<main className="mx-auto flex w-full max-w-7xl flex-1 flex-col px-4 py-8 md:px-8">
         <header className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900 md:text-4xl">
             <span className="text-[#e54c2a]">Dashboard</span> Operaciones Marítimas

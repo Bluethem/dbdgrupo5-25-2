@@ -3,7 +3,6 @@
 import { Suspense, useMemo, useState, useEffect } from "react";
 import Link from "next/link";
 import { useSearchParams, useRouter } from "next/navigation";
-import { Header } from "@/components/Header";
 import { tiposIncidenciaAPI, TipoIncidencia } from "@/lib/api/tipos-incidencia";
 import { incidenciasAPI } from "@/lib/api/incidencias";
 import { useAuth } from "@/context/AuthContext";
@@ -79,8 +78,7 @@ function NuevaIncidenciaContent() {
 
   return (
     <div className="flex min-h-screen flex-col bg-white text-[#111827] dark:bg-[#0f1923] dark:text-[#f3f4f6]">
-      <Header />
-      <main className="container mx-auto flex flex-grow flex-col px-4 py-8 sm:px-6 lg:px-8">
+<main className="container mx-auto flex flex-grow flex-col px-4 py-8 sm:px-6 lg:px-8">
         <div className="mx-auto w-full max-w-4xl">
           <header className="mb-8">
             <h2 className="text-3xl font-bold">Agregar Incidencia</h2>

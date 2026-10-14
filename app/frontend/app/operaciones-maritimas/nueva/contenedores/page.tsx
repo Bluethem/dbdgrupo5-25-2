@@ -1,6 +1,5 @@
 "use client";
 
-import { Header } from "@/components/Header";
 import Link from "next/link";
 import { Suspense, useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -193,8 +192,7 @@ function GestionarContenedoresContent() {
 
   return (
     <div className="flex flex-col min-h-screen bg-[#f5f7f8] dark:bg-[#0f1923] font-display">
-      <Header />
-      <main className="flex-grow flex flex-col p-4 lg:p-8 gap-8">
+<main className="flex-grow flex flex-col p-4 lg:p-8 gap-8">
         <div className="flex-grow flex flex-col bg-white dark:bg-slate-800 rounded-lg shadow-lg">
           <div className="p-6 border-b border-gray-200 dark:border-gray-700">
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">

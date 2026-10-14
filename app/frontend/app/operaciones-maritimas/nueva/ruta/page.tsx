@@ -1,6 +1,5 @@
 "use client";
 
-import { Header } from "@/components/Header";
 import Link from "next/link";
 import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -696,8 +695,7 @@ function SeleccionRutasMaritimasContent() {
 
   return (
     <div className="flex min-h-screen flex-col bg-gray-50 text-gray-900 dark:bg-[#0f1923] dark:text-gray-100">
-      <Header />
-      <main className="flex flex-col flex-1 gap-6 p-6">
+<main className="flex flex-col flex-1 gap-6 p-6">
         <div className="flex justify-between items-center">
           <div>
             <h2 className="text-gray-800 dark:text-gray-100 text-2xl font-bold">

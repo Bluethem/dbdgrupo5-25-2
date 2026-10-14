@@ -1,6 +1,5 @@
 "use client";
 
-import { Header } from "@/components/Header";
 import Link from "next/link";
 import { Suspense, useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -73,8 +72,7 @@ function RutasDisponiblesContent() {
 
   return (
     <div className="relative flex min-h-screen w-full flex-col bg-[#f5f7f8] dark:bg-[#0f1923] font-display">
-      <Header />
-      <main className="flex-1 px-4 sm:px-6 lg:px-8 py-8">
+<main className="flex-1 px-4 sm:px-6 lg:px-8 py-8">
         <div className="mx-auto max-w-7xl">
           <div className="mb-8">
             <h1 className="text-3xl font-bold text-gray-900 dark:text-white">

@@ -3,7 +3,6 @@
 
 import { useMemo, useState, useEffect } from "react";
 import Link from "next/link";
-import { Header } from "@/components/Header";
 import { hallazgosAPI, type TipoHallazgo } from "@/lib/api/hallazgos";
 
 type Inspection = {
@@ -122,8 +121,7 @@ export default function HallazgosPage() {
   if (loading) {
     return (
       <div className="flex min-h-screen flex-col bg-[#f5f5f5] text-[#111827] dark:bg-[#0f1923] dark:text-[#f3f4f6]">
-        <Header />
-        <main className="container mx-auto flex flex-grow flex-col items-center justify-center px-4 py-8">
+<main className="container mx-auto flex flex-grow flex-col items-center justify-center px-4 py-8">
           <div className="h-12 w-12 animate-spin rounded-full border-4 border-[#003d6b] border-t-transparent" />
         </main>
       </div>
@@ -132,8 +130,7 @@ export default function HallazgosPage() {
 
   return (
     <div className="flex min-h-screen flex-col bg-[#f5f5f5] text-[#111827] dark:bg-[#0f1923] dark:text-[#f3f4f6]">
-      <Header />
-      <main className="container mx-auto flex flex-grow flex-col px-4 py-8 sm:px-6 lg:px-8">
+<main className="container mx-auto flex flex-grow flex-col px-4 py-8 sm:px-6 lg:px-8">
         <div className="mx-auto w-full max-w-5xl">
           <h1 className="mb-8 text-3xl font-bold text-[#003d6b] dark:text-white">Inspecciones Realizadas</h1>
           <section className="mb-6 flex flex-col gap-4 sm:flex-row">

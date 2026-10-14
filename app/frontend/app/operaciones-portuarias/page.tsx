@@ -1,7 +1,7 @@
 "use client";
 
+// Dashboard del módulo; el nav vive en layout.tsx (ModuleHeader)
 import { useEffect, useState } from "react";
-import { Header } from "@/components/Header";
 import Link from "next/link";
 
 type ResumenResponse = {
@@ -59,9 +59,7 @@ export default function OperacionesPortuariasPage() {
 
   return (
     <div className="flex min-h-screen flex-col bg-white text-gray-900">
-      <Header />
-
-      <main className="mx-auto flex w-full max-w-6xl flex-grow flex-col gap-6 px-6 py-8">
+<main className="mx-auto flex w-full max-w-6xl flex-grow flex-col gap-6 px-6 py-8">
         {/* Contenedor 1: Título + botón */}
         <div className="flex items-center justify-between">
           <h1 className="text-2xl font-bold">Dashboard Operaciones Portuarias</h1>

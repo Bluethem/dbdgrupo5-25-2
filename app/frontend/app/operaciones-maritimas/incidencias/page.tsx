@@ -3,7 +3,6 @@
 import { useMemo, useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { Header } from "@/components/Header";
 import { operacionesAPI, OperacionMaritima, PaginatedResponse } from "@/lib/api/operaciones-maritimas";
 
 type OperationStatus =
@@ -96,8 +95,7 @@ export default function RegistrarIncidenciaPage() {
   if (loading && !operationsData) {
     return (
       <div className="flex min-h-screen flex-col bg-[#f5f7f8] text-[#111827] dark:bg-[#0f1923] dark:text-[#f3f4f6]">
-        <Header />
-        <main className="container mx-auto flex flex-grow flex-col px-4 py-8 sm:px-6 lg:px-8">
+<main className="container mx-auto flex flex-grow flex-col px-4 py-8 sm:px-6 lg:px-8">
           <div className="mx-auto w-full max-w-6xl">
             <div className="flex items-center justify-center py-12">
               <div className="text-center">
@@ -114,8 +112,7 @@ export default function RegistrarIncidenciaPage() {
   if (error) {
     return (
       <div className="flex min-h-screen flex-col bg-[#f5f7f8] text-[#111827] dark:bg-[#0f1923] dark:text-[#f3f4f6]">
-        <Header />
-        <main className="container mx-auto flex flex-grow flex-col px-4 py-8 sm:px-6 lg:px-8">
+<main className="container mx-auto flex flex-grow flex-col px-4 py-8 sm:px-6 lg:px-8">
           <div className="mx-auto w-full max-w-6xl">
             <div className="rounded-xl bg-red-50 p-6 dark:bg-red-900/20">
               <h3 className="mb-2 text-lg font-semibold text-red-800 dark:text-red-200">Error</h3>
@@ -135,9 +132,7 @@ export default function RegistrarIncidenciaPage() {
 
   return (
     <div className="flex min-h-screen flex-col bg-[#f5f7f8] text-[#111827] dark:bg-[#0f1923] dark:text-[#f3f4f6]">
-      <Header />
-
-      <main className="container mx-auto flex flex-grow flex-col px-4 py-8 sm:px-6 lg:px-8">
+<main className="container mx-auto flex flex-grow flex-col px-4 py-8 sm:px-6 lg:px-8">
         <div className="mx-auto w-full max-w-6xl">
           <header className="mb-6">
             <h2 className="text-3xl font-bold">

@@ -1,5 +1,4 @@
-import { Header } from "@/components/Header";
-
+// Hub del módulo; el nav vive en layout.tsx (ModuleHeader)
 const actions = [
   {
     icon: "assignment",
@@ -36,8 +35,7 @@ const actions = [
 export default function OperacionesMaritimasPage() {
   return (
     <div className="flex min-h-screen flex-col bg-[#f8f7f5] text-[#333333] dark:bg-[#221910] dark:text-gray-200">
-      <Header />
-      <main className="flex flex-1 justify-center px-4 py-5 sm:px-8 md:px-16 lg:px-24 xl:px-40">
+<main className="flex flex-1 justify-center px-4 py-5 sm:px-8 md:px-16 lg:px-24 xl:px-40">
         <div className="flex w-full max-w-5xl flex-1 flex-col">
           <section className="flex flex-col gap-3 p-4 text-center">
             <h1 className="text-4xl font-black leading-tight tracking-tight text-[#333333] dark:text-gray-100">

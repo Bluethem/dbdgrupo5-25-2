@@ -1,6 +1,5 @@
 "use client";
 
-import { Header } from "@/components/Header";
 import { Suspense, useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
@@ -79,8 +78,7 @@ function AsignarTripulacionContent() {
   if (loading) {
     return (
       <div className="min-h-screen flex flex-col">
-        <Header />
-        <main className="flex-1 container mx-auto p-6">
+<main className="flex-1 container mx-auto p-6">
           <div className="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-6">
             <p>Cargando tripulantes...</p>
           </div>
@@ -92,8 +90,7 @@ function AsignarTripulacionContent() {
   if (error) {
     return (
       <div className="min-h-screen flex flex-col">
-        <Header />
-        <main className="flex-1 container mx-auto p-6">
+<main className="flex-1 container mx-auto p-6">
           <div className="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-6 text-red-500">
             <p>{error}</p>
           </div>
@@ -138,8 +135,7 @@ function AsignarTripulacionContent() {
   };
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
-      <main className="flex-1 container mx-auto p-6">
+<main className="flex-1 container mx-auto p-6">
         <div className="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-6">
           <div className="flex justify-between items-center mb-6">
             <div>
@@ -316,7 +312,13 @@ function AsignarTripulacionContent() {
 
 export default function AsignarTripulacionPage() {
   return (
-    <Suspense fallback={<div className="min-h-screen flex flex-col"><Header /><main className="flex-1 container mx-auto p-6">Cargando...</main></div>}>
+    <Suspense
+      fallback={
+        <div className="flex min-h-screen flex-col">
+          <main className="container mx-auto flex-1 p-6">Cargando...</main>
+        </div>
+      }
+    >
       <AsignarTripulacionContent />
     </Suspense>
   );

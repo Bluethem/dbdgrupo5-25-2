@@ -1,6 +1,5 @@
 "use client";
 
-import { Header } from "@/components/Header";
 import { Suspense, useState, useEffect } from "react";
 
 import { useRouter, useSearchParams } from "next/navigation";
@@ -231,8 +230,7 @@ function NuevaOperacionPortuariaContent({}: NuevaOperacionPortuariaPageProps) {
 
   return (
     <div className="flex min-h-screen flex-col bg-[#f5f7f8] text-gray-900 dark:bg-[#0f1923] dark:text-gray-100">
-      <Header />
-      <main className="flex-1 p-4 md:p-8 lg:p-10 overflow-y-auto">
+<main className="flex-1 p-4 md:p-8 lg:p-10 overflow-y-auto">
         <div className="max-w-7xl mx-auto">
           <header className="mb-8">
             <div className="flex flex-wrap items-start justify-between gap-4">
